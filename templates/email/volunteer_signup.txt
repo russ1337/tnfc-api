@@ -1,0 +1,15 @@
+{{ message.firstName }} {{ message.lastName }}
+
+{{ message.address }}, {{ message.address2 }}
+{{ message.city }}, {{ message.state }} {{ message.zip }}
+{{ message.email }}
+{{ message.phone }}
+
+Availability:
+{{ message.availability }}
+
+
+Interests:
+{% for item in message.interests %}
+    {{ item }}
+{% endfor %}
